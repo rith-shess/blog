@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card{
+    width: 350px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgb(224, 219, 224);
+}
+.container .card .image{
+    width: 100%;
+    height: 100%;
+    padding: 0px 30px;
+    transition: 0.4s ease-in-out;
+    background-color: rgb(13, 12, 12);
+}
+.container .card .image img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+    object-fit: contain;
+}
+.container .card .card-body{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding-top: 10px;
+    padding-inline: 15px;
+}
+.container .card .card-body p{
+    margin: 10px 0;
+}
+.container .card .card-body buttom {
+    padding: 8px 14px;
+    border-radius: 9px;
+    margin-top: 20px;
+}
+.container .card .card-body button:hover{
+    cursor: pointer;
+    width: 100px;
+    border-radius: 9px;
+    border: 1px solid rgb(96, 87, 87);
+    background-color: rgb(98, 73, 188);
+}
+.card:hover .image{
+    height: 50%;
+}
+.card:hover .image img{
+    transform: rotate(-15deg) translateY(-30px);
+}
+/* .btn:hover{
+    cursor:pointer;
+    background-color: aqua;
+    color: aliceblue;
+}
+.btn{
+    padding: 20px 30px;
+    border: 1 px solid black;
+} */

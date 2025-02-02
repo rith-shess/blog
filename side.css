@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter" , serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: black;
+    color: white;
+}
+.card{
+    width: 90vw;
+    height: 369px;
+    display: flex;
+    border-radius: 12px;
+}
+.subscribe, .details{
+    width: 50%;
+    height: 100%;
+}
+.subscribe{
+    padding: 8px 24px ;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(49, 43, 43);
+    & h1{
+        font-size: 36px;
+    }
+    & p{
+        font-size: 16px;
+    }
+}
+.input-group{
+    width: auto;
+    gap: 24px;
+    display: flex;
+}
+.input{
+    width: 350px;
+    height: 40px;
+    outline: none;
+    padding: 8px 16px;
+    background: transparent ;
+    border-radius: 7px;
+    border: 1.8px solid rgb(146, 130, 130);
+    &:focus{
+        border-color: 1.8px solid rgb(78, 87, 181);
+    }
+}
+.btn{
+    border-radius: 8px;
+    padding: 8px 20px;
+    color: azure;
+    background-color: rgb(3, 3, 230);
+    border: 1.8px solid rgb(53, 53, 127)
+}
+.details{
+    display: flex;
+    background-color: rgb(1, 54, 100);
+    & .detail-card{
+        padding: 32px;
+        width: 50%;
+        height: 100%;
+        gap: 16px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    & .icon{
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: #65656746;
+        border: 1px solid #5d5d5d;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(./icon-svg/icons8-calendar.svg);
+    }
+    & h1{
+        font-size: 26px;
+        color: white;
+    }
+    & p{
+        color: aliceblue;
+    }
+}
+.detail-card:nth-child(2) > .icon{
+    background-image: url(./icon-svg/icons8-four-fingers.svg);
+    border: 1.8px solid rgb(53, 53, 127);
+}

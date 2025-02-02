@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    color: aqua;
+    display: grid;
+    background-color: #ffffffff;
+    place-content: center;
+}
+
+/* .perent{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    background-color: lightpink;
+}
+.chlid{
+    position: absolute;
+    top: 50px;
+    width: fit-content;
+    padding: 25px 12px;
+    background-color: #f3916a;
+} */ 
+
+.parent{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background-color: #db0000;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.parent > div{
+    padding:14px;
+}
+.child-sticky{
+    position: sticky;
+    top:0;
+    background-color: #1fccd8;
+}
+img{
+    width:29px;
+    height: 29px;
+    object-fit: cover;
+}

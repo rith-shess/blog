@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC+Guides&family=Playwrite+ES+Deco+Guides&family=Playwrite+MX+Guides&family=Quicksand:wght@300..700&display=swap');
+        body{
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            display: flex;
+            /* background-image: url(/image/khmer\ vintage\ \(2\).png); height: 1000px; */
+            background-size: cover;
+        }
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Quicksand ", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+        .form{
+            width: 500px;
+            height: 600px;
+        }
+        .form-group{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            &.label{
+                font-size: 15px;
+                font-weight: 600;
+                color: #ff5cff;
+            }
+            &.textflied{
+                padding: 8px 12px;
+                font-weight: 500;
+                outline: none;
+                border: 2px solid #cecece;
+                border-radius:6px;
+            }
+        }
+        .message{
+            color: #ff5cff;
+            font-size: 10px;
+            font-weight: 500;
+        }
+        
+        h1{
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-family:"space Grotesk", serif;
+        }
+        p{
+            font-size: 16px;
+        }
+        a{
+            font-size: 15px;
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-auth,
+        .btn-oauth{
+            width: 100%;
+            padding: 8px 0;
+            font-weight: 700;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: 2px solid #312053;
+            border-radius: 6px;
+        }
+        .btn-oauth{
+            color: #000000;
+            background-color: #ffffff;
+            border-color: #cecece;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img{
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+        }
+        .register{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" class="form">
+        <h1>Welcome back</h1> <br>
+        <p>Welcome back! please enter your detail. </p> <br>
+        <div id="group-email" class="form-group">
+            <label class="label" for="">Email</label>
+            <input class="textflied" type="email" id="emai" name="email" placeholder="Enter your Email" required/>
+            <span id="message" class="message"> .Email should be have @gmail.com</span>
+        </div><br/>
+        
+        <div id="group-password" class="form-group">
+            <label class="label" for="">Password</label>
+            <input class="textflied" type="password" id="password" name="password" placeholder="Enter your Password" required/>
+            <span id="message" class="message">.Password should be have 1-8 letter.</span>
+        </div><br/>
+        <a href="forgot-password.html"> Forgot Password?</a> <br/><br/>
+        <button class="btn-auth"; onclick="location.href='h.w_website.htmlh.w '"> Login </button> <br><br>
+        <button class="btn-oauth"> <img src="./image/icons8-google.svg" alt="Google"/> Sign in with Google </button>
+        <br><br><br>
+        <span class="register"> Don't have an account? <a href="./h.w-login.html"> sign up for 500$</a></span>
+    </form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+ body{
+    background-image: url(https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/styles/1920x1400/azure/2022-03/KE_Print05_MJ_103036_RGB%20copy2.jpg?h=de422346&itok=yETBEsMn);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+ }
+ .content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .content > .card{
+    width: 300px;
+    text-align: center;
+    /* background: white; */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px;
+ }
+ .card > .image {
+    width: 100%;
+    height: 150px;
+    background: rgb(36, 36, 198) ;
+    background: linear-gradient(238deg, rgb(4, 3, 13) 38%, rgba(37, 10, 174, 0.95));
+    margin-bottom: 10px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+.card:nth-child(1) {
+   background: url(https://i.pinimg.com/736x/68/3a/ec/683aec5956c9863aaf28ec186e9f2d43.jpg);
+   background-size: cover; 
+   background-position: center;
+ } 
+ .card:nth-child(2) > .image {
+    width: 100%;
+    height: 150px;
+    background: rgb(58, 54, 54);
+    background: linear-gradient(238deg, rgb(4, 3, 13) 18%, rgba(96, 94, 103, 0.95));
+    margin-bottom: 10px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+ .card:nth-child(2) {
+  background: url(https://i.pinimg.com/736x/8e/b4/bf/8eb4bf72842abd740082cb71c05e805c.jpg);
+  background-size: cover; 
+  background-position: center;
+} 
+ .card > .image > img{
+    position: absolute;
+    left: 0;
+    top: -60px;
+ }
+ .card:nth-child(2) > .image > img{
+    position: absolute;
+    left: 0;
+    top: -150px;
+ }
+ .card > .text{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   padding: 10px 35px;
+ }
+ .card > .text h3{
+   color: rgb(231, 230, 234);
+ }
+ .card > .text p{
+   font-size: 10px;
+ }
+ .card > .text p:first-child{
+   color: rgb(215, 228, 30);
+ }
+ .card > .text p:last-child{
+   color: rgb(255, 255, 255);
+   margin-top: 10px;
+ }
+
+ .footer{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+ }
+ .footer > .box{
+   width: 100px;
+   height: 75px;
+   /* background: rgba(203, 152, 10, 0.95);
+   background: linear-gradient(228deg, rgbe(144, 53, 14) 18%, rgba(253, 191, 22, 0.95)); */
+   display: grid;
+   place-content: center;
+   color: aliceblue;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ .footer:nth-of-type(2) > .box{
+   width: 100px;
+   height: 75px;
+   background: rgba(166, 166, 16, 0.95);
+   background: linear-gradient(228deg, rgbe(144, 53, 14) 18%, rgba(253, 191, 22, 0.95));
+   display: grid;
+   place-content: center;
+   color: aliceblue;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+.footer > .box:nth-child(1){
+   border-right: 1px solid white ;
+   border-bottom-left-radius:10px;
+}
+.footer > .box:nth-child(3){
+   border-left: 1px solid white ;
+   border-bottom-right-radius:10px ;
+}

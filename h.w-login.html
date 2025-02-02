@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC+Guides&family=Playwrite+ES+Deco+Guides&family=Playwrite+MX+Guides&family=Quicksand:wght@300..700&display=swap');
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333979;
+            background-image: url(https://img.freepik.com/premium-vector/abstract-technology-ui-futuristic_36402-302.jpg?w=1060);
+            background-size: cover;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing:border-box;
+            font-family:" Qicksand", sans-serif;
+            font-weight: 400px;
+            font-style: normal;
+        }
+
+        .form{
+           width: 1000px;
+           padding: 20px;
+           color: #cecece;
+           background: #35415d;
+           border-radius: 10px;
+           box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        h1{
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 14px;
+            color: #fff1f1;
+            margin-bottom: 20px;
+        }
+        .form-group{
+            width: 200px;
+            height: 60px;
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .labal{
+                font-size: 14px;
+                font-weight: 300;
+                color: #fffafa;
+        }
+        .text{
+            padding: 8px 12px;
+            font-weight: 500;
+            border: 1px solid #ffffff;
+            border-radius: 6px;
+            outline: 0px;
+        }
+        .form-group-container{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        } 
+        dl{
+            gap: 20px;
+            font-weight: 100;
+            font-size: 13.5px;
+        }
+        .btn-lol,
+        .btn-nvm{
+            width: 100%;
+            height: 50px;
+            padding: 0px 10px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: 2px solid #312053;
+            border-radius: 4px;
+        }
+        .btn-lol{
+            color: #000000;
+            background-color: #ffffff;
+            border-color: #cecece;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img{
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+        }
+        .register{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+        a{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" class="form" >
+        <h1> Create account </h1>
+        <p> For business, band or celebrity.</p><br>
+        <div class="form-group-container">
+           <div id="group-frist_name" class="form-group">
+            <label class="labal" for="">First name</label>
+            <input  class="text"type="name" id="name" name=First-name" placeholder="Enter your First name" required/>
+           </div><br>
+           <div id="group-last-name" class="form-group">
+            <label class="labal" for="">Last name</label>
+            <input class="text" type="text" id="text" name="text" placeholder="Enter your Last name" required/>
+           </div><br>
+        </div><br>
+        <div class="form-group-container">
+           <div id="group-email-phone-number" class="form-group">
+            <label class="labal" for="">Email or Phone Number </label>
+            <input class="text" type="email or number" id="email" name="email" placeholder="Enter your Email or Phone Number" required/>
+           </div><br>
+           <div id="group-frist_name" class="form-group">
+            <label class="labal" for="">Date of Birth </label>
+            <input class="text" type="date" id="date" name="date">
+           </div>
+        </div><br>
+        <div class="form-group-container">
+            <div id="group-password" class="form-group">
+             <label class="labal" for="">Password</label>
+             <input class="text" type="password" id="password" name="password" placeholder=" Enter your password" required/>
+            </div><br>
+            <div id="group-confirm-password" class="form-group">
+             <label class="labal" for="">Confirm Password</label>
+             <input class="text" type="password" id="confirm-password" name="confirm-password" placeholder="confirm-password" required/>
+            </div>
+         </div><br>
+         <dl>
+            <dt>
+                <input type="checkbox" id="remembered me" name="remembered">
+                <label for="remembered">Remember me</label><a href="/forgot-password.html" style="padding-left: 700px;">Forgot Password?</a><br><br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="./index.html"> Term and Conditions</a></label>
+            </dt>
+         </dl><br>
+        <div class="form-group-container">
+            <button class="btn-lol"; onclick="location.href='/h.w-login.html'"> sign up </button> <br><br>
+            <button class="btn-nvm"> <img src="./image/icons8-google.svg" alt="Google" style="height: 25px; padding-top: 10px;"/> Sign in with Google </button>
+        </div><br>
+        <span class="register"> Dont't have an account? <a href="./login-form.html">Log in </a></span>
+    </form>
+</body>
+</html>

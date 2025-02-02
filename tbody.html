@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side by side </title>
+    <style>
+        body{
+            background-color: rgb(116, 112, 118);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .form{
+            gap: 150px;
+            padding: 20px;
+            height: 400px;
+            width: 1200px;
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            background-image: url(https://i.pinimg.com/736x/02/1c/9c/021c9cbea3100109f44df456604862ec.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* filter: blur(20px);  */
+        }
+        .click{
+            gap: 50px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            border: 1px solid rgb(74, 50, 114);
+            background-color: rgb(50, 89, 231);
+        }
+        .btn{
+            padding: 10px 20px;
+            width: 230px;
+            background-color: rgb(214, 214, 227);
+            color: white;
+            flex-direction: row;
+            border: 1px solid rgb(255, 245, 245);
+            border-radius: 10px;
+        }
+        .house{
+            gap: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+         .img{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        .right{
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="right">
+            <h1> Subsrcibe to our newsletter </h1> 
+            <p> Nostrud amet eu ullamco nisi aute in ad minim nostrud <br> adipisicing velit quis.Duis tempor incididunt dolore.</p>
+            <form>
+                <input  class="btn" id="text" name="text" placeholder="Enter your email" required>
+                <button class="click"> Subscribe </button>
+            </form>
+        </div>
+        <div class="house">
+            <div>
+                <img src="./icon-svg/calendar (1).png">
+                <h4> Weekly articles </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur  <br> adipiscing elit.Sed ut perspiciatis unde <br> omnis iste natus error sit voluptatem.</p>
+            </div>
+            <div>
+                <img src="./icon-svg/hello.png">
+                <h4> NO spam </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur  <br> adipiscing elit.Sed ut perspiciatis unde <br> omnis iste natus error sit voluptatem.</p>
+            </div> 
+                
+        </div> 
+    </div>
+</body>
+</html>
